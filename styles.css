@@ -1,0 +1,24 @@
+:root
+{
+--primaryColor:#FBBF24;
+font-family: 'Lato', sans-serif;
+}
+.container
+{
+    padding:0rem 1rem;
+}
+.navbar
+{
+    
+    
+    border-bottom-left-radius: 2rem;
+    background-color: var(--primaryColor);
+
+}
+
+img.profile
+{
+   max-width:7rem;
+   height:7rem;
+   border-radius: 50%;
+}
