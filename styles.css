@@ -1,6 +1,7 @@
 :root
 {
 --primaryColor:#FDE68A;
+--primaryTextColor:#BE185D;
 font-family: 'Lato', sans-serif;
 }
 body
@@ -21,7 +22,7 @@ margin:0;
 }
 .navbar h3
 {
-    color:#BE185D;
+    color:var(--primaryTextColor);
     text-shadow: 2px 2px 4px #FFFFFF;
 }
 .nav-list
@@ -71,5 +72,21 @@ margin:0;
 }
 .heading span
 {
-    color:#BE185D;
+    color:var(--primaryTextColor);
+}
+.skills
+{
+    background-color: var(--primaryColor);
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.skills p
+{
+    color:var(--primaryTextColor);
+    font-weight: bold;
+    font-size: 1.1rem;
 }
