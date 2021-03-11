@@ -1,11 +1,15 @@
 :root
 {
---primaryColor:#FBBF24;
+--primaryColor:#FDE68A;
 font-family: 'Lato', sans-serif;
+}
+body
+{
+margin:0; 
 }
 .container
 {
-    padding:0rem 1rem;
+    padding:1rem;
 }
 .navbar
 {
@@ -15,10 +19,30 @@ font-family: 'Lato', sans-serif;
     background-color: var(--primaryColor);
 
 }
-
-img.profile
+.navbar h3
 {
-   max-width:7rem;
-   height:7rem;
-   border-radius: 50%;
+    color:#BE185D;
+    text-shadow: 2px 2px 4px #FFFFFF;
 }
+.nav-list
+{
+    
+   list-style: none;
+   display:flex;
+   flex-direction: row;
+   justify-content:flex-end;
+}
+.nav-pills
+{
+    padding-right:2rem;
+}
+.nav-pills:hover
+{
+    text-decoration: underline;
+    transition: .3s ease-in-out;
+}
+.nav-pills a
+{
+    text-decoration: none;
+}
+
