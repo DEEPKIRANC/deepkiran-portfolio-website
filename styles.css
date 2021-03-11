@@ -46,3 +46,17 @@ margin:0;
     text-decoration: none;
 }
 
+.heading
+{
+    padding:2rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headericon
+{
+  width:350px;
+  max-width: 80%;  
+}
