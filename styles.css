@@ -1,6 +1,7 @@
 :root
 {
 --primaryColor:#FDE68A;
+--secondaryColor:#FFFBEB;
 --primaryTextColor:#BE185D;
 font-family: 'Lato', sans-serif;
 }
@@ -51,7 +52,7 @@ margin:0;
 
 .heading
 {
-    background-color: #FFFBEB;
+    background-color:var(--secondaryColor);
     padding:2rem;
     padding-top: 5rem;
     display: flex;
@@ -87,6 +88,41 @@ margin:0;
 .skills p
 {
     color:var(--primaryTextColor);
-    font-weight: bold;
     font-size: 1.1rem;
+}
+
+section.projects
+{
+    background-color: var(--secondaryColor);
+    padding:2rem;
+}
+
+div.overview
+{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+div.overview img
+{
+    max-width:80%;
+    width:350px;
+}
+
+section.projects h1
+{
+    text-align: center;
+}
+div.link
+{
+    padding:0.5rem;
+    background-color: var(--primaryColor);
+    border-radius: 2rem;
+}
+div.link a
+{
+    text-decoration: none;
+    color:var(--primaryTextColor);
+    font-weight: bold;
 }
