@@ -75,7 +75,7 @@ margin:0;
 {
     color:var(--primaryTextColor);
 }
-.skills
+.generic
 {
     background-color: var(--primaryColor);
     padding:1rem;
@@ -85,7 +85,7 @@ margin:0;
 
 }
 
-.skills p
+.generic p
 {
     color:var(--primaryTextColor);
     font-size: 1.1rem;
@@ -104,10 +104,17 @@ div.overview
     flex-direction: column;
     align-items:center;
 }
+
 div.overview img
 {
     max-width:80%;
     width:350px;
+}
+
+div.overview p
+{
+    color: var(--primaryTextColor);
+    font-size: 1.1rem;
 }
 
 section.projects h1
@@ -116,13 +123,35 @@ section.projects h1
 }
 div.link
 {
-    padding:0.5rem;
+    padding:1rem;
     background-color: var(--primaryColor);
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 div.link a
 {
     text-decoration: none;
     color:var(--primaryTextColor);
     font-weight: bold;
+}
+div.blog
+{
+    background-color: var(--secondaryColor);
+}
+.footer
+{
+    padding:1rem;
+    background-color: var(--secondaryColor);
+}
+footer h3
+{
+    text-align:center;
+}
+.line
+{
+    width:25%;
+   border-top: 1px solid var(--primaryTextColor);
+}
+.socialicons
+{
+    justify-content: center;
 }
