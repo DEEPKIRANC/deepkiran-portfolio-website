@@ -50,6 +50,11 @@ margin:0;
     text-decoration: none;
 }
 
+.activelink
+{
+    font-weight: bolder;
+}
+
 .heading
 {
     background-color:var(--secondaryColor);
