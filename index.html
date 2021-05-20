@@ -8,15 +8,20 @@
    -->
     <link href="styles.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Russo+One&display=swap');
     </style>
     <title>Portfolio|Deepkiran</title>
 </head>
 <body>
     <nav id="headernav" class="navbar container">
        
-        <h3>CHANTATI DEEPKIRAN</h3>
+        
         
         <ul class="nav-list">
 
@@ -29,17 +34,24 @@
             <li class="nav-pills">
                 <a href="/blogs.html">BLOGS</a>
             </li>
-            <li class="nav-pills">
-                <a href="/">ABOUT</a>
-            </li>
+            <li>
+                <button id="themeChanger" style="border:none;background-color: var(--lightModeColor);cursor:pointer;color:var(--lightModeTextColor)">THEME</button>
+            </li>    
+            
 
         </ul>    
     </nav>
+    <h1 class="intro__name">Hi, I'm Deep Kiran</h1>
     <header class="heading">
-        <img src="images/web_developer_icon.svg" class="headericon"/>
-        <h2>Hey ! I am Deep Kiran.</h2>
-        <span>"Life is a journey , not a destination . Its more fun when you embrace it."</span>
         
+        
+        <img src="images/background.gif" class="headericon"/>
+        <div class="about__me">
+        <p>"Life is a journey , not a destination"</p>
+        <div class="sometext"><p>I'm a passionate Frontend Engineer from India . I love building web apps, debugging errors and helping fellow coders. </div>
+        </p>
+        <button class="resume__download">Download Resume</button>
+        </div>
     </header>    
     <section class="generic">
         <h1>Technologies | Skillset</h1>
@@ -75,28 +87,34 @@
             <li class="nav-pills" ><a href="https://deepkiran.hashnode.dev/" style="color: #333;">Hashnode</a></li>
         </ul>
     </footer>    
-    <!--<h1>Hey ! I am Deep Kiran.</h1>
-    <span>About Me :</span>
-    <ul>
-        <li>I am 23 years old and a CS graduate from SRMIST,Chennai.</li>
-        <li>I am currently working as a Systems Engineer in Infosys Ltd,Hyderabad.</li>
-        <li>I am looking out for Full Stack Developer roles ! So reach out to me if you have any open positions in your org.</li>
-    </ul>  
-    
-    <hr/>
 
-    <span>My Projects:</span>
-    <p>I have worked on few CLI apps and web apps as well . </p>
-    <br/>
-    <h2>Stay Tuned for more updates---------------</h2>
-    <br/>
-    <span>My Interests:</span>
-    <ul>
-        <li>Listening to Music and singing . Favourite Musician - Shankar Mahadevan.</li>
-        <li>Everything about Cricket</li>
-        <li>Exploring new places and food .</li>
-    </ul>
--->    
 </body>
- 
+
+<script>
+    document.getElementById("themeChanger").addEventListener("click",()=>{
+        var r=document.querySelector(':root');
+        var current__background__color=getComputedStyle(r).getPropertyValue('--lightModeColor');
+        
+        if(current__background__color=="#FFF")
+        {
+            var r=document.querySelector(':root');
+            
+            setTimeout(()=>{
+                r.style.setProperty('--lightModeColor','#192734');
+                r.style.setProperty('--lightModeTextColor','#FFF');
+            },100)
+        }
+        else
+        {
+            var r=document.querySelector(':root');
+            setTimeout(()=>{
+                r.style.setProperty('--lightModeColor','#FFF');
+                r.style.setProperty('--lightModeTextColor','#192734');
+            },100)
+            
+        }
+
+    })
+</script>    
+
 </html>

@@ -1,61 +1,61 @@
 :root
 {
---primaryColor:#FDE68A;
---secondaryColor:#FFFBEB;
---primaryTextColor:#BE185D;
-font-family: 'Lato', sans-serif;
+--lightModeColor:#FFF;
+
+--lightModeTextColor:#192734;
+
+--primaryFontFamily:'Roboto Mono', monospace;
+--secondaryFontFamily:'Russo One','sans-serif';
 }
 body
 {
 margin:0; 
 padding:0;
 box-sizing: border-box;
+overflow-x: hidden;
+background-color: var(--lightModeColor);
 }
 .container
 {
     padding:1rem;
-    position: fixed;
-    top:0%;
-    left: 0%;
+   
     width:100%;
-    z-index:100000;
+    
   
 }
-.navbar
-{
-    
-    
-    border-bottom-left-radius: 2rem;
-    background-color: var(--primaryColor);
 
-}
-.navbar h3
-{
-    color:var(--primaryTextColor);
-    text-shadow: 2px 2px 4px #FFFFFF;
-}
 .nav-list
 {
     
    list-style: none;
    display:flex;
    flex-direction: row;
-   justify-content:flex-end;
+   justify-content:center;
+   font-family: var(--primaryFontFamily);
+}
+.nav-list button:hover
+{
+    font-weight: bold;
 }
 .nav-pills
 {
-    padding-right:2rem;
+    margin-right:2rem;
+    color:var(--darkModeColor);
+    
 }
 .nav-pills:hover
 {
     
-    padding-left:2px;
+    
     transition: .2s ease-in-out;
     font-weight: bolder;
 }
 .nav-pills a
 {
     text-decoration: none;
+    font-family: var(--primaryFontFamily);
+    color:var(--lightModeTextColor);
+    
 }
 
 .activelink
@@ -66,24 +66,77 @@ box-sizing: border-box;
 .heading
 {
     position: relative;
-    background-color:var(--secondaryColor);
-    padding:2rem;
-    padding-top: 10rem;
+    background-color:var(--lightModeColor);
+    padding:1rem;
+   
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    column-gap: 0.5rem;
     
 }
 
+.about__me
+{
+    font-family: var(--primaryFontFamily);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:var(--lightModeTextColor);
+    border-radius: 15px;
+}
+.sometext
+{
+    max-width:400px;
+    padding:1rem;
+    text-align: center;
+}
+.sometext p
+{
+    text-align: justify;
+}
 .headericon
 {
   width:350px;
   max-width: 80%;  
 }
-.heading h2
+.intro__name
 {
-    margin-top:6rem;
-    
+   font-family:"Russo One",'sans-serif';
+   font-size:56px;
+   text-align: center;
+   color:var(--lightModeTextColor); 
+}
+.resume__download
+{
+    padding:0.25rem 1rem;
+    font-family:var(--primaryFontFamily);
+    color:var(--lightModeTextColor);
+    background-color: var(--lightModeColor);
+    border:2px solid var(--lightModeTextColor);
+    margin-bottom: 40px;
+    cursor:pointer;
+}
+
+@media screen and (max-width:768px)
+{
+    .heading{
+        flex-direction: column;
+    }
+    .about__me p
+    {
+        font-size: 0.8rem;
+    }
+    .intro__name
+    {
+        font-size: 28px;
+    }
+    .nav-list
+    {
+        justify-content: flex-start;
+    }
 }
 .heading span
 {
