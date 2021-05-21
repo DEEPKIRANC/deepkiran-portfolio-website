@@ -18,10 +18,15 @@ background-color: var(--lightModeColor);
 .container
 {
     padding:1rem;
-   
+    background-color: var(--lightModeTextColor);
     width:100%;
     
   
+}
+
+.container .nav-list .nav-pills a
+{
+    color:var(--lightModeColor);
 }
 
 .nav-list
@@ -214,11 +219,12 @@ div.blog
 {
     border-top:1px dashed var(--lightModeTextColor);
     padding:1rem;
-    background-color: var(--secondaryColor);
+    background-color: #f3f4f6;
 }
-footer h3
+.footer h3
 {
     text-align:center;
+    font-family: var(--secondaryFontFamily);
 }
 .line
 {
@@ -337,7 +343,7 @@ footer h3
     }
     .nav-list
     {
-        justify-content: flex-start;
+        justify-content: center;
     }
     .generic > h1{
         font-size: 28px;
