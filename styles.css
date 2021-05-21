@@ -182,7 +182,7 @@ section.projects
     border-top:1px dashed var(--lightModeTextColor);
 
 }
-.projects > h1
+.projects h1
 {
     font-family: var(--secondaryFontFamily);
     color:var(--lightModeTextColor);
@@ -350,5 +350,6 @@ div.blog
     .generic > h1{
         font-size: 28px;
     }
+  
 
 }

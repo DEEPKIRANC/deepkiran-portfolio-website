@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!---- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   -->
     <link href="styles.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Russo+One&display=swap');
     </style>
-    <title>Blogs|Deepkiran</title>
+    <title>Portfolio|Deepkiran</title>
 </head>
 <body>
-    <nav class="navbar container">
+    <nav id="headernav" class="container">
        
-        <h3>CHANTATI DEEPKIRAN</h3>
+        
         
         <ul class="nav-list">
 
             <li class="nav-pills">
-                <a href="index.html">HOME</a>
+                <a class="activelink" href="index.html">HOME</a>
             </li>
             <li class="nav-pills">
-                <a href="/projects.html">PROJECTS</a>
+                <a href="projects.html">PROJECTS</a>
             </li>
             <li class="nav-pills">
-                <a class="activelink" href="blogs.html">BLOGS</a>
+                <a href="/blogs.html">BLOGS</a>
             </li>
-            <li class="nav-pills">
-                <a href="/">ABOUT</a>
-            </li>
+            <li>
+                <span id="themeChanger" class="far fa-moon" style="color:var(--lightModeColor);cursor: pointer;"></span>
+            </li>    
+            
 
         </ul>    
     </nav>
@@ -70,15 +77,20 @@
         </div>
     </div>
     <footer class="footer">
-        <h3>Let's connect on Social Media platforms</h3>
+        <h3>CONTACT ME</h3>
+        <span style="text-align: center;color:#192734;font-family:var(--secondaryFontFamily);display:block;">8778534638 | cdeepkiran14@gmail.com</span>
         <hr class="line"/>
         <ul class="nav-list socialicons">
-            <li class="nav-pills" ><a href="https://www.linkedin.com/in/deep-kiran-579899107/" style="color: #0e76a8;">LinkedIn</a></li>
-            <li class="nav-pills" ><a href="https://github.com/DEEPKIRANC" style="color: black;">Github</a></li>
-            <li class="nav-pills" ><a href="https://twitter.com/DeepKir96010262" style="color: #1DA1F2;">Twitter</a></li>
-            <li class="nav-pills" ><a href="https://deepkiran.hashnode.dev/" style="color: #333;">Hashnode</a></li>
-       
+            <li class="nav-pills" ><a href="https://www.linkedin.com/in/deep-kiran-579899107/" style="color: #0e76a8;"><span class="fab fa-linkedin"></span></a></li>
+            <li class="nav-pills" ><a href="https://github.com/DEEPKIRANC" style="color: black;"><span class="fab fa-github"></span></a></li>
+            <li class="nav-pills" ><a href="https://twitter.com/DeepKir96010262" style="color: #1DA1F2;"><span class="fab fa-twitter"></span></a></li>
+            <li class="nav-pills" ><a href="https://deepkiran.hashnode.dev/" style="color:#192734;font-family: var(--primaryFontFamily);font-weight: bold;">Hashnode</a></li>
         </ul>
-    </footer>     
+    </footer>    
+
+
+    <script src="script.js">
+    
+    </script>    
 </body>
 </html>

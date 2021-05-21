@@ -4,128 +4,231 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!---- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   -->
     <link href="styles.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Russo+One&display=swap');
     </style>
-    <title>Projects|Deepkiran</title>
+    <title>Portfolio|Deepkiran</title>
 </head>
 <body>
-    <nav class="navbar container">
+    <nav id="headernav" class="container">
        
-        <h3>CHANTATI DEEPKIRAN</h3>
+        
         
         <ul class="nav-list">
 
             <li class="nav-pills">
-                <a href="index.html">HOME</a>
+                <a  href="index.html">HOME</a>
             </li>
             <li class="nav-pills">
                 <a class="activelink" href="projects.html">PROJECTS</a>
             </li>
             <li class="nav-pills">
-                <a href="blogs.html">BLOGS</a>
+                <a href="/blogs.html">BLOGS</a>
             </li>
-            <li class="nav-pills">
-                <a href="/">ABOUT</a>
-            </li>
+            <li>
+                <span id="themeChanger" class="far fa-moon" style="color:var(--lightModeColor);cursor: pointer;"></span>
+            </li>    
+            
 
         </ul>    
-    </nav>
-     
-    <h3 style="text-align: center;padding-top: 10rem;">Personal Projects And Neogcamp Journey</h3>
-    <hr class="line"/>
+    </nav> 
+    
+    <section class="projects" style="border-bottom: 1px dashed var(--lightModeTextColor);">
+        <h1>Featured Projects</h1>
+        <div class="project__section scrollclass">
+            <div class="project__card">
+                <img src="./images/projectss/exchangeOgram.PNG" alt="no image"/>
+                <h4>Exchange-o-Gram</h4>
+                <p>
+                    A Photo Gallery app where you can upload and save your pictures in public/personal space.  
+                </p>   
+                <span><strong>Technologies Used: HTML5,CSS3,Javascript,ReactJS,Firebase </strong></span>
+                <div style="display: flex;width:100%;justify-content: space-between;padding: 0.5rem;">
+                    <div class="liveprojectbtn">
+                        <a target="_blank" href="https://exchange-o-gram-f8d0e.web.app">Live Project</a>
+                    </div>
+                    <div class="liveprojectbtn">
+                        <a target="_blank" href="https://github.com/DEEPKIRANC/Exchange-o-Gram">View Source</a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="projectsection">
+            <div class="project__card">
+                <img src="./images/projectss/chatapp.PNG" alt="no image"/>
+                <h4>InstaChat-Chat App</h4>
+                <p>
+                    A full stack chat application where you can create groups and sent text messages. 
+                </p>   
+                <span><strong>Technologies Used: JS,ReactJS,CSS3,MaterialUI,Firebase </strong></span>
+                <div style="display: flex;width:100%;justify-content: space-between;padding: 0.5rem;">
+                <div class="liveprojectbtn">
+                    <a target="_blank" href="https://chat-app-a710c.web.app/">Live Project</a>
+                </div>
+                <div class="liveprojectbtn">
+                    <a target="_blank" href="https://github.com/DEEPKIRANC/Chat-Application">View Source</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="project__card">
+                <img src="./images/projectss/QuickNotes.PNG" alt="no image"/>
+                <h4>Quick Notes</h4>
+                <p>
+                    A note taking app where you can add and save your notes with realtime editor.   
+                </p>   
+                <span><strong>Technologies Used: CSS3,JS,ReactJS,React Quill,Firebase </strong></span>
+                <div style="display: flex;width:100%;justify-content: space-between;padding: 0.5rem;">
+                <div class="liveprojectbtn">
+                    <a target="_blank"  href="http://quick-notes-66d30.web.app/">Live Project</a>
+                </div>
+                <div class="liveprojectbtn">
+                    <a target="_blank" href="https://github.com/DEEPKIRANC/Quick-Notes">View Source</a>
+                </div>
+            </div>
+            </div>
+            
+            <div class="project__card">
+                <img src="./images/projectss/movieverse.PNG" alt="no image"/>
+                <h4>MovieVerse</h4>
+                <p>
+                    A movie recommendation app with detailed cast,ratings and recommendations.   
+                </p>   
+                <span><strong>Technologies Used: CSS3,JS,ReactJS,REST API,Firebase </strong></span>
+                <div style="display: flex;width:100%;justify-content: space-between;padding: 0.5rem;">
+                <div class="liveprojectbtn">
+                    <a target="_blank"  href="https://movie-recommendation-app-8f7f7.web.app">Live Project</a>
+                </div>
+                <div class="liveprojectbtn">
+                    <a target="_blank" href="https://github.com/DEEPKIRANC/movie-recommendation-app">View Source</a>
+                </div>
+            </div>
+        </div> 
+            <div class="project__card">
+                <img src="./images/projectss/weatherapp.PNG" alt="no image"/>
+                <h4>Weather App - PWA</h4>
+                <p>
+                    Shows Current Weather of city entered with modern pwa features (installable/offline support)
+                </p>   
+                <span><strong>Technologies Used: ReactJS,REST API,Service Workers,Netlify </strong></span>
+                <div style="display: flex;width:100%;justify-content: space-between;padding: 0.5rem;">
+                <div class="liveprojectbtn">
+                    <a target="_blank"  href="https://weatherapp-pwa-react.netlify.app/">Live Project</a>
+                </div>
+                <div class="liveprojectbtn">
+                    <a target="_blank" href="https://github.com/DEEPKIRANC/Weather-App-PWA">View Source</a>
+                </div>
+            </div>
+            </div>
         
-        <div class="project-card">
+    </section>
+    
+    <h1 style="text-align: center;color:var(--lightModeTextColor);font-family: var(--secondaryFontFamily);">Mini Projects</h1>    
+
+    <section class="project__section">
+        
+        <div class="project__card">
             <img src="images/Todo-Firebase.PNG" alt="no image"/>
-            <h4><u></u>To-do App</u></h4>
+            <h4>To-do App</h4>
             <p>
                 A todo application where you can add and track your daily tasks.
             </p>   
             <span><strong>Technologies Used: HTML5,CSS3,Javascript,ReactJS,Firebase </strong></span>
             <div style="display: flex;width:100%;justify-content: space-between;padding: 0.5rem;">
             <div class="liveprojectbtn">
-                <a style="color:var(--lightModeColor);" href="https://react-todo-app-6a594.web.app/">Live Project</a>
+                <a target="_blank" style="color:var(--lightModeColor);" href="https://react-todo-app-6a594.web.app/">Live Project</a>
             </div>
-            <div class="sourcecodebtn">
-                <a href="https://github.com/DEEPKIRANC/todo-firebase">View Source</a>
+            <div class="liveprojectbtn">
+                <a target="_blank" href="https://github.com/DEEPKIRANC/todo-firebase">View Source</a>
             </div>
             </div>
         </div>
-        <div class="project-card">
+        <div class="project__card">
             <img src="images/socialmedia_microservices.PNG" alt="no image"/>
-            <h4><u>Social Media Aggregator</u></h4>
+            <h4>Social Media Aggregator</h4>
             <p>
                 A Social Media template made in microservices architectural style .
                 This can be used to create posts and comments.
             </p>   
-            <span><strong>Technologies Used: HTML5,CSS3,Javascript,NodeJS,ExpressJS,ReactJS </strong></span>
-            <div class="sourcecodebtn">
-                <a href="https://github.com/DEEPKIRANC/Microservices">View Source</a>
+            <span><strong>Technologies Used: JS,NodeJS,ExpressJS,ReactJS </strong></span>
+            <div class="liveprojectbtn">
+                <a target="_blank" href="https://github.com/DEEPKIRANC/Microservices">View Source</a>
             </div>
         </div>
-        <div class="project-card">
+        <div class="project__card">
             <img src="images/food_recommendation_csb.PNG" alt="no image"/>
-            <h4><u>Food Recommendation App</u></h4>
+            <h4>Food Recommendation App</h4>
             <p>
                 Trying to explore Indian Cuisine? This app will recommend you the most 
                 popular dishes in India and regional delicacies as well.Made using ReactJS with love.
             </p>   
             <span><strong>Technologies Used: HTML5,CSS3,Javascript,ReactJS </strong></span>
+            <div style="display: flex;width:100%;justify-content: space-between;padding: 0.5rem;">
             <div class="liveprojectbtn">
-                <a style="color: #551A8B;" href="https://jrix1.csb.app/">Live Project</a>
+                <a  href="https://jrix1.csb.app/" target="_blank">Live Project</a>
             </div>
-            <div class="sourcecodebtn">
-                <a href="https://github.com/DEEPKIRANC/Food-Recommendation-App">View Source</a>
+            <div class="liveprojectbtn">
+                <a href="https://github.com/DEEPKIRANC/Food-Recommendation-App" target="_blank">View Source</a>
             </div>
-
         </div>
-        <div class="project-card">
+        </div>
+        <div class="project__card">
             <img src="images/symbol_interpreter_csb.PNG" alt="no image"/>
-            <h4><u>Symbol Interpreter App</u></h4>
+            <h4>Symbol Interpreter App</h4>
             <p>
                 A Symbol Interpreter built using ReactJS. User can either click on the symbol or enter the symbol in the box to see the meaning.
             </p>   
             <span><strong>Technologies Used: HTML5,CSS3,Javascript,ReactJS </strong></span>
+            <div style="display: flex;width:100%;justify-content: space-between;padding: 0.5rem;">
+
             <div class="liveprojectbtn">
-                <a style="color: #551A8B;" href="https://kpon8.csb.app/">Live Project</a>
+                <a target="_blank" href="https://kpon8.csb.app/">Live Project</a>
             </div>
-            <div class="sourcecodebtn">
-                <a href="https://github.com/DEEPKIRANC/Symbol-Interpreter">View Source</a>
+            <div class="liveprojectbtn">
+                <a target="_blank" href="https://github.com/DEEPKIRANC/Symbol-Interpreter">View Source</a>
             </div>
+           </div>
         </div>
-        <div class="project-card">
+        <div class="project__card">
             <img src="images/piratespeak_netlify.PNG" alt="no image"/>
-            <h4><u>Pirate Speaks Translation</u></h4>
+            <h4>Pirate Speaks Translation</h4>
             <p>
                 This app translates user's message to the language used by Pirates. Also learn about pirate lingo , Ahoy!
             </p>   
             <span><strong>Technologies Used: HTML5,CSS3,Javascript </strong></span>
+            <div style="display: flex;width:100%;justify-content: space-between;padding: 0.5rem;">
             <div class="liveprojectbtn">
-                <a style="color: #551A8B;" href="https://deep-piratespeaks.netlify.app/">Live Project</a>
+                <a  target="_blank" href="https://deep-piratespeaks.netlify.app/">Live Project</a>
             </div>
-            <div class="sourcecodebtn">
-                <a href="https://github.com/DEEPKIRANC/Pirate-Speaks">View Source</a>
+            <div class="liveprojectbtn">
+                <a target="_blank" href="https://github.com/DEEPKIRANC/Pirate-Speaks">View Source</a>
             </div>
         </div>
-        <div class="project-card">
+        </div>
+        <div class="project__card">
             <img src="images/bananaspeaks_netlify.PNG" alt="no image"/>
-            <h4><u>Minions Language Translation</u></h4>
+            <h4>Minions Language Translation</h4>
             <p>
                 A fun translation app to understand the language of minions. Also read some fun facts about minions.
             </p>   
             <span><strong>Technologies Used: HTML5,CSS3,Javascript</strong></span>
+            <div style="display: flex;width:100%;justify-content: space-between;padding: 0.5rem;">
             <div class="liveprojectbtn">
-                <a style="color: #551A8B;" href="https://bananatranslations.netlify.app/">Live Project</a>
+                <a  target="_blank" href="https://bananatranslations.netlify.app/">Live Project</a>
             </div>
-            <div class="sourcecodebtn">
-                <a href="https://github.com/DEEPKIRANC/Decode-Minionese">View Source</a>
+            <div class="liveprojectbtn">
+                <a target="_blank" href="https://github.com/DEEPKIRANC/Decode-Minionese">View Source</a>
             </div>
         </div>
-        <div class="project-card">
+        </div>
+        <!--<div class="project-card">
             <img src="images/GOT_QuizRepl.PNG" alt="no image"/>
             <h4><u>Game Of Thrones Trivia</u></h4>
             <p>
@@ -153,19 +256,26 @@
                 <a href="https://github.com/DEEPKIRANC/Do-You-Know-Me-Quiz">View Source</a>
             </div>
         </div>
-    </div>    
+        !-->
+           
+    </section>
 
-
+</div> 
     <footer class="footer">
-        <h3>Reach Out To Me At</h3>
+        <h3>CONTACT ME</h3>
+        <span style="text-align: center;color:#192734;font-family:var(--secondaryFontFamily);display:block;">8778534638 | cdeepkiran14@gmail.com</span>
         <hr class="line"/>
         <ul class="nav-list socialicons">
-            <li class="nav-pills" ><a href="https://www.linkedin.com/in/deep-kiran-579899107/" style="color: #0e76a8;">LinkedIn</a></li>
-            <li class="nav-pills" ><a href="https://github.com/DEEPKIRANC" style="color: black;">Github</a></li>
-            <li class="nav-pills" ><a href="https://twitter.com/DeepKir96010262" style="color: #1DA1F2;">Twitter</a></li>
-            <li class="nav-pills" ><a href="https://deepkiran.hashnode.dev/" style="color: #333;">Hashnode</a></li>
-       
+            <li class="nav-pills" ><a href="https://www.linkedin.com/in/deep-kiran-579899107/" style="color: #0e76a8;"><span class="fab fa-linkedin"></span></a></li>
+            <li class="nav-pills" ><a href="https://github.com/DEEPKIRANC" style="color: black;"><span class="fab fa-github"></span></a></li>
+            <li class="nav-pills" ><a href="https://twitter.com/DeepKir96010262" style="color: #1DA1F2;"><span class="fab fa-twitter"></span></a></li>
+            <li class="nav-pills" ><a href="https://deepkiran.hashnode.dev/" style="color:#192734;font-family: var(--primaryFontFamily);font-weight: bold;">Hashnode</a></li>
         </ul>
-    </footer> 
+    </footer>    
+
+
+    <script src="script.js">
+    
+    </script> 
 </body>
 </html>
