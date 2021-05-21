@@ -1,6 +1,6 @@
 :root
 {
---lightModeColor:#FFF;
+--lightModeColor:#F3F4F6;
 
 --lightModeTextColor:#192734;
 
@@ -120,24 +120,7 @@ background-color: var(--lightModeColor);
     cursor:pointer;
 }
 
-@media screen and (max-width:768px)
-{
-    .heading{
-        flex-direction: column;
-    }
-    .about__me p
-    {
-        font-size: 0.8rem;
-    }
-    .intro__name
-    {
-        font-size: 28px;
-    }
-    .nav-list
-    {
-        justify-content: flex-start;
-    }
-}
+
 .heading span
 {
     color:var(--primaryTextColor);
@@ -149,56 +132,79 @@ background-color: var(--lightModeColor);
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top:1px dashed var(--lightModeTextColor);
 
+}
+.generic > h1
+{
+    font-family: var(--secondaryFontFamily);
+    color:var(--lightModeTextColor);
+}
+
+.skill__icons
+{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
+.icon__item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill__icons img
+{
+    max-width: 100px;
+    height:100px;
+    
 }
 
 .generic p
 {
-    color:var(--primaryTextColor);
-    font-size: 1.1rem;
+    color:var(--lightModeTextColor);
+    font-size: 0.8rem;
+    font-family: var(--primaryFontFamily);
+    font-weight: bold;
 }
 
 section.projects
 {
-    background-color: var(--secondaryColor);
     padding:2rem;
+    border-top:1px dashed var(--lightModeTextColor);
+
+}
+.projects > h1
+{
+    font-family: var(--secondaryFontFamily);
+    color:var(--lightModeTextColor);
+    
 }
 
-div.overview
-{
-    margin-top: 2rem;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-}
-
-div.overview img
-{
-    max-width:80%;
-    width:350px;
-}
-
-div.overview p
-{
-    color: var(--primaryTextColor);
-    font-size: 1.1rem;
-}
 
 section.projects h1
 {
     text-align: center;
 }
-div.link
+.link
 {
     padding:1rem;
-    background-color: var(--primaryColor);
+    background-color: var(--lightModeColor);
     border-radius: 1rem;
+    border:2px solid var(--lightModeTextColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding:0.25rem 0.5rem;
+    margin-top:2rem;
 }
 div.link a
 {
+    letter-spacing: 0.2rem;
+    text-align: center;
     text-decoration: none;
-    color:var(--primaryTextColor);
-    font-weight: bold;
+    color:var(--lightModeTextColor);
+    font-family: var(--secondaryFontFamily);
 }
 div.blog
 {
@@ -206,6 +212,7 @@ div.blog
 }
 .footer
 {
+    border-top:1px dashed var(--lightModeTextColor);
     padding:1rem;
     background-color: var(--secondaryColor);
 }
@@ -233,57 +240,107 @@ footer h3
     flex-wrap: wrap;
     background-color: #F9FAFB;
 }
-.project-card
+.project__section
 {
-    border:2px solid #111;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+.project__card
+{
+    
     max-width:300px;
-    border-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: 2px 2px 8px var(--lightModeTextColor);
+    box-sizing: border-box;
     padding:0.5rem;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.project-card img
+.project__card img
 {
+    
     width:100%;
+    object-fit: contain;
     max-width: 300px;
-    max-height:175px;
+    height:140px;
     
 }
-.project-card p
+.project__card > h4
 {
-    font-size: 1rem;
-    text-align: justify;
+    font-family: var(--primaryFontFamily);
+    color:var(--lightModeTextColor);
+    font-weight: bold;
+    opacity:0.8;
+    
 }
-.project-card span
+.project__card p
+{
+    font-size: 0.9rem;
+    text-align: justify;
+    font-family:var(--primaryFontFamily);
+    color:var(--lightModeTextColor);
+    font-weight: bold;
+    opacity: 0.8;
+}
+.project__card span
 {
     text-align: center;
     font-size:0.80rem;
+    font-family:var(--primaryFontFamily);
+    color:var(--lightModeTextColor);
+    font-weight: bold;
+    opacity:0.9;
+    
 }
-.sourcecodebtn
-{
-    padding:0.5rem;
-    margin-top:0.5rem;
-    border:1px solid var(--primaryTextColor);
-    border-radius: 0.5rem;
-    font-family:'Lato', sans-serif;
-    background-color: white;
-    color:var(--primaryTextColor);
-}
+
 .liveprojectbtn
 {
     padding:0.5rem;
     margin-top:0.5rem;
     border-radius: 0.5rem;
-    font-family:'Lato', sans-serif;
-    background-color:var(--primaryColor);
+    font-family:var(--primaryFontFamily);
+    background-color:var(--lightModeTextColor);
     
 }
-
+.liveprojectbtn a
+{
+    text-decoration: none;
+    color:var(--lightModeColor);
+    font-size: 0.7rem;
+    font-weight: bold;
+    opacity:0.8;
+}
 .project-card a
 {
     text-decoration: none;
     color: var(--primaryTextColor);
 }
 
+@media screen and (max-width:768px)
+{
+    .heading{
+        flex-direction: column;
+    }
+    .about__me p
+    {
+        font-size: 0.8rem;
+    }
+    .intro__name
+    {
+        font-size: 28px;
+    }
+    .nav-list
+    {
+        justify-content: flex-start;
+    }
+    .generic > h1{
+        font-size: 28px;
+    }
+
+}
