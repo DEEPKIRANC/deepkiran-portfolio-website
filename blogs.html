@@ -25,13 +25,13 @@
         <ul class="nav-list">
 
             <li class="nav-pills">
-                <a class="activelink" href="index.html">HOME</a>
+                <a  href="index.html">HOME</a>
             </li>
             <li class="nav-pills">
                 <a href="projects.html">PROJECTS</a>
             </li>
             <li class="nav-pills">
-                <a href="/blogs.html">BLOGS</a>
+                <a class="activelink" href="/blogs.html">BLOGS</a>
             </li>
             <li>
                 <span id="themeChanger" class="far fa-moon" style="color:var(--lightModeColor);cursor: pointer;"></span>
@@ -40,42 +40,56 @@
 
         </ul>    
     </nav>
-    <h3 style="text-align: center;padding-top: 10rem;">My Blogs</h3>
-    <hr class="line"/>
-    <div class="projectsection">
-        <div class="project-card">
-            <h4>Lexical Environment,Scope Chain and Block Scope in JavaScript</h4>
-            <p>
-                So after reading this article, you'll understand and would be able to explain the concepts of Hoisting, lexical environment, and block scope easily. And we'll follow this roadmap -
 
-                JavaScript behind the scenes (Execution Context and Call Stack) ....
-            </p>   
+
+    <section class="projects">
+        <h1> My Blogs</h1>
+        <div class="project__section">
+            <div class="project__card">
+                <img src="./images/projectss/blog1.PNG" alt="no" />
+                <p>
+                    So after reading this article, you'll understand and would be able to explain the concepts of Hoisting, lexical environment, and block scope easily. And we'll follow this roadmap -
+    
+                    JavaScript behind the scenes (Execution Context and Call Stack) ....
+                </p>   
+                    <div class="liveprojectbtn">
+                        <a target="_blank" href="https://deepkiran.hashnode.dev/understanding-hoisting-lexical-environment-and-block-scope-in-javascript-with-var-let-and-const-variables">Read Blog</a>
+                    </div>
+                  
+                </div>
+           
+
+            <div class="project__card">
+                <img src="./images/projectss/blog2.PNG" alt="noimg">
+                <p>
+                    In JavaScript, functions are known as First-Class Citizens because they allow us to perform asynchronous tasks. Functions can also be used as an argument inside a function and can be returned as well. But what exactly is a callback function? When we pass....   
+                </p> 
+                <div class="liveprojectbtn">
+                    <a target="_blank" href="https://deepkiran.hashnode.dev/callback-functions-event-listeners-and-event-loop-in-javascript">Read Blog</a>
+                </div>
+               
+            </div>
+
             
-            <div class="sourcecodebtn">
-                <a target="_blank" href="https://deepkiran.hashnode.dev/understanding-hoisting-lexical-environment-and-block-scope-in-javascript-with-var-let-and-const-variables">View Blog</a>
+            <div class="project__card">
+                <img src="./images/projectss/blog3.PNG" alt="noimg">
+                <p>
+                    When a function is directly called with reference to its object, this points to that object's scope and it can access the variables defined in the object's scope. But when we try to assign an object's function to another function(without object reference) and...
+            
+                </p> 
+                <div class="liveprojectbtn">
+                    <a target="_blank" href="https://deepkiran.hashnode.dev/polyfill-for-bind-method-and-currying-in-javascript">Read Blog</a>
+                </div>
+               
             </div>
         </div>
-        <div class="project-card">
-            <h4>Callback Functions, Event Listeners and Event Loop in JavaScript</h4>
-            <p>
-                In JavaScript, functions are known as First-Class Citizens because they allow us to perform asynchronous tasks. Functions can also be used as an argument inside a function and can be returned as well. But what exactly is a callback function? When we pass....   
-            </p>   
-            
-            <div class="sourcecodebtn">
-                <a target="_blank" href="https://deepkiran.hashnode.dev/callback-functions-event-listeners-and-event-loop-in-javascript">View Blog</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <h4>Polyfill for bind method and Function Currying in JavaScript</h4>
-            <p>
-                When a function is directly called with reference to its object, this points to that object's scope and it can access the variables defined in the object's scope. But when we try to assign an object's function to another function(without object reference) and...
-            </p>   
-            
-            <div class="sourcecodebtn">
-                <a target="_blank" href="https://deepkiran.hashnode.dev/polyfill-for-bind-method-and-currying-in-javascript">View Blog</a>
-            </div>
-        </div>
-    </div>
+        
+      
+    </section>  
+
+
+
+
     <footer class="footer">
         <h3>CONTACT ME</h3>
         <span style="text-align: center;color:#192734;font-family:var(--secondaryFontFamily);display:block;">8778534638 | cdeepkiran14@gmail.com</span>
